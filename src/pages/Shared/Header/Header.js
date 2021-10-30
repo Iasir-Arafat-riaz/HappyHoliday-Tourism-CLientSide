@@ -22,7 +22,7 @@ const Header = () => {
         <div>
              <div className="text-center">
       <h1 onClick={goToHome} className="company-name ">
-        Happy Holiday Tourism
+        <b>Happy Holiday Tourism</b>
       </h1>
       <Navbar
         collapseOnSelect
@@ -59,7 +59,7 @@ const Header = () => {
                   to="MyOrder"
                   className="header-link"
                 >
-                  <b>My Order</b>
+                  {user.email&&<b>My Order</b>}
                 </NavLink>
               </Navbar.Brand>
               <Navbar.Brand>
@@ -73,7 +73,7 @@ const Header = () => {
                   to="ManageOrder"
                   className="header-link"
                 >
-                  <b>Manage Order</b>
+                {user.email&&<b>Manage Order</b>}
                 </NavLink>
               </Navbar.Brand>
               <Navbar.Brand>
@@ -87,51 +87,24 @@ const Header = () => {
                   to="AddPackages"
                   className="header-link"
                 >
-                  <b>Add New</b>
+                 {user.email&& <b>Add New</b>}
                 </NavLink>
               </Navbar.Brand>
-              <NavDropdown title="More Info" id="collasible-nav-dropdown">
-                <NavDropdown.Item>
-                  <NavLink
-                    to="/faq"
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "black",
-                    }}
-                    to="./sponsors"
-                    className="header-info"
-                  >
-                    About Us
-                  </NavLink>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <NavLink
-                    to="/faq"
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "black",
-                    }}
-                    to="forum"
-                    className="header-info"
-                  >
-                    Forum
-                  </NavLink>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <NavLink
-                    to="/faq"
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "black",
-                    }}
-                    to="admission"
-                    className="header-info"
-                  >
-                    Admission
-                  </NavLink>
-                </NavDropdown.Item>
-                
-              </NavDropdown>
+              <Navbar.Brand>
+                {" "}
+                <NavLink
+                  to="/faq"
+                  activeStyle={{
+                    fontWeight: "bold",
+                    color: "black",
+                  }}
+                  to="AboutUs"
+                  className="header-link"
+                >
+                  <b>About Us</b>
+                </NavLink>
+              </Navbar.Brand>
+              
             </Nav>
            
           </Navbar.Collapse>

@@ -1,9 +1,14 @@
 import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Card, Col,Button } from "react-bootstrap";
+import { Link,useHistory } from "react-router-dom";
 import "./SinglePackage.css";
 
 const SinglePackage = (props) => {
-  const { packg, info, img } = props.package;
+  const { packg, info, img,_id } = props.package;
+  const history = useHistory()
+  const bookOrder =()=>{
+history.push(`/Place-Order/${_id}`)
+  }
   return (
     <div>
       <Col >
@@ -18,10 +23,11 @@ const SinglePackage = (props) => {
               <p>{info}</p>
             </Card.Text>
           </Card.Body>
-          <button>Book Now</button>
+          
+          <button className="bookingButton" onClick={bookOrder}><b>Book Now</b></button>
         </Card>
       </Col>
-      {/* <img src={img} alt=""/> */}
+      
     </div>
   );
 };

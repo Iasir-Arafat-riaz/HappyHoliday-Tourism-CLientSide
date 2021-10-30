@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Row, Spinner } from "react-bootstrap";
+import { useAuth } from "../../../Hooks/useAuth";
 import SinglePackage from "./SinglePackage/SinglePackage";
 
 const alltourPackage=[
@@ -16,6 +17,8 @@ const alltourPackage=[
 const Packages = () => {
   const [packages, setPackages] = useState([]);
   const [pageLoading,setPageLoading]=useState(true)
+  const {user}=useAuth()
+  console.log(user)
 
   useEffect(() => {
     
@@ -27,7 +30,7 @@ const Packages = () => {
       
   }, []);
   
-  
+  console.log(packages)
   
  
   console.log("four")

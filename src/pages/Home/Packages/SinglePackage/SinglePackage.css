@@ -1,3 +1,11 @@
 .packages-img{
     width: 100%;
 }
+.bookingButton{
+    background-color: cadetblue;
+    padding: 10px;
+}
+.bookingButton:hover{
+    background-color: darkblue;
+    color: rgb(241, 194, 72);
+}

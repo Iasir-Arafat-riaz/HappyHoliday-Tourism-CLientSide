@@ -9,6 +9,10 @@ import MyOrder from "./pages/MyOrder/MyOrder";
 import ManageOrder from "./pages/ManageOrder/ManageOrder";
 import AddPackages from "./pages/AddPackages/AddPackages";
 import AuthProvider from "./pages/AuthProvider/AuthProvider";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
+import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Footer from "./pages/Shared/Footer/Footer";
 
 function App() {
   return (
@@ -35,11 +39,18 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          <PrivateRoute path="/Place-Order/:id">
+            <PlaceOrder></PlaceOrder>
+          </PrivateRoute>
+          <Route path="/AboutUs">
+            <AboutUs></AboutUs>
+          </Route>
 
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
       </AuthProvider>
       

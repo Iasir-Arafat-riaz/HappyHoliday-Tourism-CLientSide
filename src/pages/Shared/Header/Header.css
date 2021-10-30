@@ -10,8 +10,8 @@
     color: white;
 }
 .company-name:hover{
-    background-color:cadetblue;
-    color:rgb(177, 0, 35);
+    background-color:rgb(120, 213, 216);
+    color:darkblue
 }
 .header-info{
     text-decoration: none;
@@ -21,3 +21,4 @@
     width: 40px;
     border-radius: 25px;
 }
+body{background-color:rgb(252, 242, 228);}
