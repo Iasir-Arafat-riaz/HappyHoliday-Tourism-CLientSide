@@ -1,9 +1,12 @@
 import React from 'react';
 
-const SinglePackage = () => {
+const SinglePackage = (props) => {
+    const {packg,info,img}=props.package
     return (
         <div>
-            <h1>individual pacakage</h1>
+            {/* <img src={img} alt=""/> */}
+            <h1>pacakage title :{packg}</h1>
+            <p>{info}</p>
         </div>
     );
 };
