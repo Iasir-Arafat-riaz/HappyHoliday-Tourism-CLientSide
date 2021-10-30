@@ -33,7 +33,7 @@ const Packages = () => {
   console.log("four")
   return (
     <div>
-      <h2>packages section</h2>
+      <h2>Our Top Packages</h2>
       
       {
           packages.map((packg,index)=><SinglePackage key={index} package={packg}></SinglePackage>)

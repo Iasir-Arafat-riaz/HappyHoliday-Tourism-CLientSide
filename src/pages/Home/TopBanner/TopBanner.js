@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./TopBanner.css"
 
 const TopBanner = () => {
-    return (
-        <div>
-            <h2>top banner section</h2>
-        </div>
-    );
+  return (
+    <div className="header">
+      <img class="img-fluid" src="https://i.ibb.co/pyC5W5m/cov.png" alt="" />
+    </div>
+  );
 };
 
 export default TopBanner;
