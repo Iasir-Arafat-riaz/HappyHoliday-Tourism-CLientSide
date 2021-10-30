@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Spinner } from "react-bootstrap";
+import { Row, Spinner } from "react-bootstrap";
 import SinglePackage from "./SinglePackage/SinglePackage";
 
 const alltourPackage=[
@@ -34,10 +34,15 @@ const Packages = () => {
   return (
     <div>
       <h2>Our Top Packages</h2>
-      
+      <Row xs={1} md={2} className="g-4 m-3">
+ 
       {
           packages.map((packg,index)=><SinglePackage key={index} package={packg}></SinglePackage>)
       }
+  
+</Row>
+      
+     
     </div>
   );
 };
