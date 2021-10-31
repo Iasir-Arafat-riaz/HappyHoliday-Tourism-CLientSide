@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import "./InternationalTourism.css"
 
 const InternationalTourism = () => {
   return (
@@ -16,7 +17,7 @@ const InternationalTourism = () => {
             <Card.Body>
               <Card.Title>MalDip</Card.Title>
               <Card.Title>Three Night Four Day </Card.Title>
-              <Card.Text>
+              <Card.Text className="text">
                 3 Nights’ Accommodation on Twin Share Basis Daily Breakfast at
                 Hotel Male Airport –Hotel-Airport Transfer by Speed boat, we
                 explore many historical place in male, there have many ancient
@@ -37,7 +38,7 @@ const InternationalTourism = () => {
             <Card.Body>
               <Card.Title>Nepal</Card.Title>
               <Card.Title>Nepal five Night Six Day</Card.Title>
-              <Card.Text>
+              <Card.Text className="text">
                 Package includes: Dhaka - Kathmandu - Dhaka air ticket by
                 Himalayan air, nights twin share accommodation in Kathmandu at
                 Hotel Royal Suite (3 star), nights twin share accommodation in
@@ -56,7 +57,7 @@ const InternationalTourism = () => {
             <Card.Body>
               <Card.Title>Bali,Indonesia</Card.Title>
               <Card.Title>Three Night Four Day</Card.Title>
-              <Card.Text>
+              <Card.Text className="text">
                 Bali is a province of Indonesia and the westernmost of the
                 Lesser Sunda Islands. East of Java and west of Lombok, the
                 province includes the island of Bali, so we are recently added dhaka to bali tour package, we are very excited explore to bali .
@@ -77,7 +78,7 @@ const InternationalTourism = () => {
               <Card.Title>Singapore</Card.Title>
               <Card.Title>Four Night Four Day</Card.Title>
 
-              <Card.Text>Dhaka - Singapore - Dhaka air ticket by Biman Bangladesh airlines, 2 nights twin share accommodation in Singapore at Hotel Royal or similar, daily breakfast, all taxes & service charge, airport–hotel-airport transfers & half day city tour.</Card.Text>
+              <Card.Text className="text">Dhaka - Singapore - Dhaka air ticket by Biman Bangladesh airlines, 2 nights twin share accommodation in Singapore at Hotel Royal or similar, daily breakfast, all taxes & service charge, airport–hotel-airport transfers & half day city tour.</Card.Text>
             </Card.Body>
 
             {/* <button className="bookingButton" onClick={bookOrder}><b>Book Now</b></button> */}

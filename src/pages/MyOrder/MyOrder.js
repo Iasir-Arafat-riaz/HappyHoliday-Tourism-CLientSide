@@ -13,7 +13,7 @@ const MyOrder = () => {
       .then((data) => setMyOrder(data));
   }, []);
 
-  const onlyMyOrder= myOrder.filter(own=>own.bookingInfo.email == email)
+  const onlyMyOrder= myOrder.filter(own=>own.bookingInfo.email ===email)
 console.log(myOrder);
 //Remove Order from My order Page
 const ownOrderRemove=(event)=>{
