@@ -13,7 +13,7 @@ const AddPackages = () => {
   };
   return (
     <div className="add-Packages-Plan">
-      <h2>You Can Add New Package Plan</h2>
+      <h2 className="common-header">You Can Add New Package Plan</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input required placeholder="enter package plane ID" type="number" {...register("packageNo")} />
         <input required placeholder="enter package name includes resort name" {...register("packg")} />

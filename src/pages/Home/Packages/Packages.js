@@ -24,7 +24,7 @@ const Packages = () => {
   console.log("four");
   return (
     <div className="packages-plans">
-      <h2>Our Top Packages and Plans</h2>
+      <h2 className="common-header">Our Top Packages and Plans</h2>
       <Row xs={1} md={2} className="g-4 m-3">
         {packages.map((packg, index) => (
           <SinglePackage key={index} package={packg}></SinglePackage>

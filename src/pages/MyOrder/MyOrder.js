@@ -34,7 +34,7 @@ const ownOrderRemove=(event)=>{
 }
   return (
     <div>
-      <h1>My order section</h1>
+      <h2 className="common-header">Here Show Your Confirmed Order</h2>
       <div className="myOrder-Div ">
           {onlyMyOrder.map((orderInfo) => (
             <div className="my-order" key={orderInfo._id}>

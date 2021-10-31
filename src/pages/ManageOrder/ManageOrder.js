@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./ManageOrder.css"
 
 
 const ManageOrder = () => {
@@ -27,10 +28,10 @@ const ManageOrder = () => {
    
     return (
         <div>
-      <h1>Manage All Order</h1>
+      <h1 className="common-header">Manage All Order</h1>
       <div className="myOrder-Div ">
       {manageOrder.map((orderInfo) => (
-        <div className="my-order "   key={orderInfo._id}>
+        <div className="my-order " id="manage-order"  key={orderInfo._id}>
           <div >
             <h3>Name:{orderInfo?.bookingInfo?.name}</h3>
             <h5>Email : {orderInfo?.bookingInfo?.email}</h5>
