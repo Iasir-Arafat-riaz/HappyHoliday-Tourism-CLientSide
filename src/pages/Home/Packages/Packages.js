@@ -57,7 +57,7 @@ const Packages = () => {
   console.log(user);
 
   useEffect(() => {
-    fetch("http://localhost:4001/packages")
+    fetch("https://radiant-harbor-69471.herokuapp.com/packages")
       .then((res) => res.json())
       .then((data) => setPackages(data));
   }, []);

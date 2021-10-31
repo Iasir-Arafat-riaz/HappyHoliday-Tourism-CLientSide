@@ -8,7 +8,7 @@ const AddPackages = () => {
   const onSubmit = (data) => {
     //   const dataobject ={bookingInfo:     }
       console.log(data)
-      axios.post("http://localhost:4001/packagess",data)
+      axios.post("https://radiant-harbor-69471.herokuapp.com/packagess",data)
       .then()
   };
   return (

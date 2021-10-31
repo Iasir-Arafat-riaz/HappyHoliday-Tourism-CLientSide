@@ -8,7 +8,7 @@ const MyOrder = () => {
   const {user}=useAuth()
   const email=user.email
   useEffect(() => {
-    fetch("http://localhost:4001/allOrder")
+    fetch("https://radiant-harbor-69471.herokuapp.com/allOrder")
       .then((res) => res.json())
       .then((data) => setMyOrder(data));
   }, []);
@@ -19,7 +19,7 @@ console.log(myOrder);
 const ownOrderRemove=(event)=>{
    const confirmation = window.confirm("Are you sure delete this order")
    if(confirmation){
-    fetch(`http://localhost:4001/allOrder/${event}`,{
+    fetch(`https://radiant-harbor-69471.herokuapp.com/allOrder/${event}`,{
         method:"delete"
     })
     .then(res=>res.json())

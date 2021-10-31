@@ -21,18 +21,20 @@ const PlaceOrder = () => {
 
   //load individual tour-package information
   useEffect(() => {
-    fetch(`http://localhost:4001/packages/${Id}`)
+    fetch(`https://radiant-harbor-69471.herokuapp.com/packages/${Id}`)
       .then((res) => res.json())
-      .then((data) => setSinglePackage(data));
+      .then((data) => setSinglePackage(data.addingInfo));
   }, []);
   console.log(singlePackage);
   const { packageNo, cost, img, info, packg } = singlePackage;
+
+  console.log("costing is",img,cost)
 
   //Post operation for order placing
   const onSubmit = (data) => {
     data.date = startDate;
     axios
-      .post("http://localhost:4001/packages", data)
+      .post("https://radiant-harbor-69471.herokuapp.com/packages", data)
       .then((res) => console.log(res));
   };
 
@@ -47,7 +49,7 @@ const PlaceOrder = () => {
           <img src={img} alt="" />
           <h4>{packg}</h4>
           <p>{info}</p>
-          <h5>One night Two day package per couple : {cost}TK</h5>
+          <h5>One night Two day package per couple:{cost}TK</h5>
           <br />
           <br />
           <b>Select going date</b>

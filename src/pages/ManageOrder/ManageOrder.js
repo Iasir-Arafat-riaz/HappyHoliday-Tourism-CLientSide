@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 const ManageOrder = () => {
     const [manageOrder,setManageOrder]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:4001/allOrder")
+        fetch("https://radiant-harbor-69471.herokuapp.com/allOrder")
         .then(res=>res.json())
         .then(data=>setManageOrder(data))
     },[])
@@ -13,7 +13,7 @@ const ManageOrder = () => {
     const removeThisOrder=(e)=>{
        const confirm = window.confirm("Are you sure delete this order")
        if(confirm){
-        fetch(`http://localhost:4001/allOrder/${e}`,{
+        fetch(`https://radiant-harbor-69471.herokuapp.com/allOrder/${e}`,{
             method:"delete"
         })
         .then(res=>res.json())
