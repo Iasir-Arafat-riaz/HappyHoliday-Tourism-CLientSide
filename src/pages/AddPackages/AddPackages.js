@@ -15,12 +15,12 @@ const AddPackages = () => {
     <div className="add-Packages-Plan">
       <h2>You Can Add New Package Plan</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input placeholder="enter package plane ID" type="number" {...register("packageNo")} />
-        <input placeholder="enter package name includes resort name" {...register("packg")} />
-        <textarea  placeholder="enter description about your tour packages" {...register("info")} />
+        <input required placeholder="enter package plane ID" type="number" {...register("packageNo")} />
+        <input required placeholder="enter package name includes resort name" {...register("packg")} />
+        <textarea required  placeholder="enter description about your tour packages" {...register("info")} />
         
-        <input placeholder="enter exact cost for your Package"  type="number" {...register("cost")} />
-        <input placeholder="you can submit photo, must need resorts/cottages url  "  {...register("img")} />
+        <input required placeholder="enter exact cost for your Package"  type="number" {...register("cost")} />
+        <input required placeholder="you can submit photo, must need resorts/cottages url  "  {...register("img")} />
 
         <input  type="submit" />
       </form>

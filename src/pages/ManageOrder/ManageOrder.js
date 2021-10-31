@@ -32,11 +32,11 @@ const ManageOrder = () => {
       {manageOrder.map((orderInfo) => (
         <div className="my-order "   key={orderInfo._id}>
           <div >
-            <h2>Name:{orderInfo?.bookingInfo?.name}</h2>
-            <h4>Email : {orderInfo?.bookingInfo?.email}</h4>
-            <h4>Address: {orderInfo?.bookingInfo?.address}</h4>
-            <h4>Contact Number: {orderInfo?.bookingInfo?.phone}</h4>
-            <h5>Selected Resort: {orderInfo?.bookingInfo?.resort}</h5>
+            <h3>Name:{orderInfo?.bookingInfo?.name}</h3>
+            <h5>Email : {orderInfo?.bookingInfo?.email}</h5>
+            <h6>Address: {orderInfo?.bookingInfo?.address}</h6>
+            <h6>Contact Number: {orderInfo?.bookingInfo?.phone}</h6>
+            <h6>Selected Resort: {orderInfo?.bookingInfo?.resort}</h6>
             <h6> Total Advance: {orderInfo?.bookingInfo?.charge}TK</h6>
             <h6>Resort going Date: {orderInfo?.bookingInfo?.date}</h6>
             <button onClick={()=>removeThisOrder(orderInfo._id)} className="btn btn-danger mt-3">Remove Order</button>

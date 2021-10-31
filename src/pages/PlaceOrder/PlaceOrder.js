@@ -12,6 +12,7 @@ import { useAuth } from "../../Hooks/useAuth";
 const PlaceOrder = () => {
   const [startDate, setStartDate] = useState(new Date());
   const { register, handleSubmit } = useForm();
+  const[isConfirm,setIsConfirm]=useState(false)
 
   const { Id } = useParams();
   const [singlePackage, setSinglePackage] = useState({});
@@ -33,6 +34,7 @@ const PlaceOrder = () => {
   //Post operation for order placing
   const onSubmit = (data) => {
     data.date = startDate;
+    setIsConfirm(true)
     axios
       .post("https://radiant-harbor-69471.herokuapp.com/packages", data)
       .then((res) => console.log(res));
@@ -52,6 +54,7 @@ const PlaceOrder = () => {
           <h5>One night Two day package per couple:{cost}TK</h5>
           <br />
           <br />
+          {!isConfirm? <h6 className="pending">Order Pending</h6>:<h6 className="confirm">Order Confirm</h6>}
           <b>Select going date</b>
           <DatePicker
             selected={startDate}

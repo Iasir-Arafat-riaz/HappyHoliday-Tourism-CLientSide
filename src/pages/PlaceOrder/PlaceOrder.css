@@ -17,3 +17,11 @@
 .place-order-mainDiv{
     margin-bottom: 100px;
 }
+.pending{
+    color: red;
+    font-weight: 900;
+}
+.confirm{
+    color: green;
+    font-weight: 900;
+}
