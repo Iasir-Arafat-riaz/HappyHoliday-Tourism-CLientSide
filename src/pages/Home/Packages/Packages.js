@@ -23,7 +23,7 @@ const Packages = () => {
 
   console.log("four");
   
-    if(isLoading){return  (<h4  className="spinner">please wait.... <Spinner  animation="border" variant="danger" /></h4>)}
+    if(isLoading){return  (<h4  className="spinner">please wait few second.... <Spinner  animation="border" variant="danger" /></h4>)}
   return (
     <div className="packages-plans">
       <h2 className="common-header">Our Top Packages and Plans</h2>
