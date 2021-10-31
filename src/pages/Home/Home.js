@@ -3,7 +3,7 @@ import InternationalTourism from './InternationalTourism/InternationalTourism';
 import Packages from './Packages/Packages';
 import TopBanner from './TopBanner/TopBanner';
 import "./Home.css"
-import AdventureAndTracking from './AdventureAndTracking/AdventureAndTracking';
+import AdventureAndTracking from './Advanture/AdventureAndTracking';
 const Home = () => {
     //Added Two Extra Section for bonus marks
     return (
