@@ -2,6 +2,8 @@ import React from "react";
 import { Card, Col,Button } from "react-bootstrap";
 import { Link,useHistory } from "react-router-dom";
 import "./SinglePackage.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const SinglePackage = (props) => {
   console.log(props.package)
@@ -26,7 +28,7 @@ history.push(`/${_id}`)
             </Card.Text>
           </Card.Body>
           
-          <button className="bookingButton" onClick={bookOrder}><b>Book Now</b></button>
+          <button className="bookingButton" onClick={bookOrder}><b>Book Now <FontAwesomeIcon icon={faShoppingCart} /></b></button>
         </Card>
       </Col>
       
