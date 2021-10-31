@@ -25,7 +25,7 @@ const ownOrderRemove=(event)=>{
     .then(res=>res.json())
     .then(data=>{
        if(data.deletedCount){
-           const remainingOrder = onlyMyOrder.filter(rest=>rest._id!=event)
+           const remainingOrder = onlyMyOrder.filter(rest=>rest._id!==event)
            setMyOrder(remainingOrder)
        }
     })
