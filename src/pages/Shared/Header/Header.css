@@ -4,14 +4,17 @@
     /* line-height: 100px; */
 }
 .company-name{
-    background-color: rgba(0, 0, 0, 0.685);
+    color: wheat;
+    background-color: teal;
+    
     line-height: 60px;
     margin-bottom: 0;
-    color: white;
+   
 }
 .company-name:hover{
     background-color:rgb(120, 213, 216);
-    color:darkblue
+    color:darkblue;
+    text-shadow: 1px 1px 0px #3f3232;
 }
 .header-info{
     text-decoration: none;

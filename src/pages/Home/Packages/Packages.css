@@ -5,4 +5,8 @@
 .common-header{
     padding: 30px;
     font-weight: 700;
+    color: rgb(3, 49, 49);
+}
+.common-header:hover{
+    color: rgb(9, 9, 192);
 }

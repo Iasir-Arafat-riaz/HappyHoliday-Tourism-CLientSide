@@ -22,7 +22,7 @@ const AddPackages = () => {
         <input required placeholder="enter exact cost for your Package"  type="number" {...register("cost")} />
         <input required placeholder="you can submit photo, must need resorts/cottages url  "  {...register("img")} />
 
-        <input  type="submit" />
+        <input className="bg-danger" type="submit" />
       </form>
     </div>
   );
