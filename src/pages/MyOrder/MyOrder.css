@@ -1,0 +1,28 @@
+.my-order{
+    margin: 10px;
+    border: 2px solid goldenrod;
+    /* background-color: lightcoral; */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.61);
+    
+    
+   
+}
+.myOrder-Div{
+    margin: 20px;
+    display: grid;
+    margin-bottom: 200px;
+   
+  
+}
+@media only screen and (max-width: 688px){
+.myOrder-Div {
+    grid-template-columns: 1fr;
+}
+}
+@media only screen and (min-width: 689px) {
+    .myOrder-Div{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

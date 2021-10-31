@@ -1,0 +1,19 @@
+.place-OrderDiv{
+    margin-right: auto;
+    margin-left: auto;
+}
+.place-OrderDiv img {width: 50%;}
+.place-OrderDiv form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.place-OrderDiv form input{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+.place-order-mainDiv{
+    margin-bottom: 100px;
+}

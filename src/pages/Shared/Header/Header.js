@@ -59,7 +59,7 @@ const Header = () => {
                   to="MyOrder"
                   className="header-link"
                 >
-                  {user.email&&<b>My Order</b>}
+                  {user?.email&&<b>My Order</b>}
                 </NavLink>
               </Navbar.Brand>
               <Navbar.Brand>
@@ -73,7 +73,7 @@ const Header = () => {
                   to="ManageOrder"
                   className="header-link"
                 >
-                {user.email&&<b>Manage Order</b>}
+                {user?.email&&<b>Manage Order</b>}
                 </NavLink>
               </Navbar.Brand>
               <Navbar.Brand>
@@ -87,7 +87,7 @@ const Header = () => {
                   to="AddPackages"
                   className="header-link"
                 >
-                 {user.email&& <b>Add New</b>}
+                 {user?.email&& <b>Add New</b>}
                 </NavLink>
               </Navbar.Brand>
               <Navbar.Brand>

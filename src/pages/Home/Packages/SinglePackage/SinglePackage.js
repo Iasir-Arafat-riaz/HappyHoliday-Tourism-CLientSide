@@ -4,10 +4,12 @@ import { Link,useHistory } from "react-router-dom";
 import "./SinglePackage.css";
 
 const SinglePackage = (props) => {
-  const { packg, info, img,_id } = props.package;
+  console.log(props.package)
+  const { packg, info, img } = props.package.addingInfo;
+  const{_id}=props.package
   const history = useHistory()
   const bookOrder =()=>{
-history.push(`/Place-Order/${_id}`)
+history.push(`/${_id}`)
   }
   return (
     <div>

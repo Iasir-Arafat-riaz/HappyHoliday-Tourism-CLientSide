@@ -1,9 +1,12 @@
 import React from 'react';
+import "./Footer.css"
 
 const Footer = () => {
     return (
         <div>
-            <h5>Footer</h5>
+           <div className="footer">
+            <h4 className="text-center">All right reserved by iasir arafat riaz @2021 </h4>
+        </div>
         </div>
     );
 };
