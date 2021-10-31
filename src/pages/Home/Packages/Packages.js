@@ -10,7 +10,7 @@ import "./Packages.css"
 const Packages = () => {
   const [packages, setPackages] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
-  const { user } = useAuth();
+  const { user,isLoading } = useAuth();
   console.log(user);
 
   useEffect(() => {
@@ -22,6 +22,8 @@ const Packages = () => {
   console.log(packages);
 
   console.log("four");
+  
+    if(isLoading){return  (<h4  className="spinner">please wait.... <Spinner  animation="border" variant="danger" /></h4>)}
   return (
     <div className="packages-plans">
       <h2 className="common-header">Our Top Packages and Plans</h2>

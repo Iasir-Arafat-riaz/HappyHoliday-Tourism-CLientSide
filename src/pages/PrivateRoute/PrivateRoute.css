@@ -1,7 +1,7 @@
 .spinner{
     display: block;
-  position: fixed;
-  z-index: 1031; /* High z-index so it is on top of the page */
+  /* position: fixed; */
+  z-index: 2031; /* High z-index so it is on top of the page */
   top: 50%;
   right: 50%; /* or: left: 50%; */
   
