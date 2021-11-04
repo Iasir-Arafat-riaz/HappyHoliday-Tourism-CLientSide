@@ -4,12 +4,13 @@ import { useForm } from "react-hook-form";
 import "./AddPackages.css"
 
 const AddPackages = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit,reset } = useForm();
   const onSubmit = (data) => {
     //   const dataobject ={bookingInfo:     }
       console.log(data)
       axios.post("https://radiant-harbor-69471.herokuapp.com/packagess",data)
       .then()
+      reset()
   };
   return (
     <div className="add-Packages-Plan">

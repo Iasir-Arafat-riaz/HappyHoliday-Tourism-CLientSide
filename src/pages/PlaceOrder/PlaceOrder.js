@@ -10,7 +10,7 @@ import { useAuth } from "../../Hooks/useAuth";
 
 const PlaceOrder = () => {
   const [startDate, setStartDate] = useState(new Date());
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit,reset } = useForm();
   const[isConfirm,setIsConfirm]=useState(false)
 
   const { Id } = useParams();
@@ -37,6 +37,7 @@ const PlaceOrder = () => {
     axios
       .post("https://radiant-harbor-69471.herokuapp.com/packages", data)
       .then((res) => console.log(res));
+      reset()
   };
 
   console.log(startDate);

@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCPLYRbAxad4ptMlvK0zZJtHRhbKcQYqqA",
-    authDomain: "haapy-holiday.firebaseapp.com",
-    projectId: "haapy-holiday",
-    storageBucket: "haapy-holiday.appspot.com",
-    messagingSenderId: "143996630246",
-    appId: "1:143996630246:web:5cf69a546481f45ebcf727"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain:process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket:process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER,
+    appId: process.env.REACT_APP_APP_ID
   };
   export {firebaseConfig}
