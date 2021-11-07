@@ -53,10 +53,6 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
-      <Route path="what">
-        <Home></Home> 
-
-      </Route>
       </AuthProvider>
       
     </div>
