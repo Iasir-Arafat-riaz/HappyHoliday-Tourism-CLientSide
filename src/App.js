@@ -18,47 +18,43 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/MyOrder">
-            <MyOrder></MyOrder>
-          </Route>
-          <Route path="/ManageOrder">
-            <ManageOrder></ManageOrder>
-          </Route>
-          <Route  path="/AddPackages">
-            <AddPackages></AddPackages>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route exact path="/AboutUs">
-            <AboutUs></AboutUs>
-          </Route>
-          <PrivateRoute  path="/:Id">
-            <PlaceOrder></PlaceOrder>
-          </PrivateRoute>
-          
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/MyOrder">
+              <MyOrder></MyOrder>
+            </Route>
+            <Route path="/ManageOrder">
+              <ManageOrder></ManageOrder>
+            </Route>
+            <Route path="/AddPackages">
+              <AddPackages></AddPackages>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route exact path="/AboutUs">
+              <AboutUs></AboutUs>
+            </Route>
+            <PrivateRoute path="/:Id">
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
 
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
       </AuthProvider>
-      
     </div>
   );
 }
 
 export default App;
-
-//thanks
